@@ -165,21 +165,23 @@ export default async function ProjectPage({ params }: PageProps<"/[lang]/project
           </Reveal>
 
           {/* Équipe de conception : noms et rôles uniquement, jamais de coordonnées. */}
-          {project.team.length > 0 && <Stagger as="section" className="grid gap-8 border-t border-line py-14 md:grid-cols-3">
-            <StaggerItem variant="left">
-              <h2 className="eyebrow">{t.project.team}</h2>
-            </StaggerItem>
-            {project.team.map((id) => (
-              <StaggerItem key={id} className="flex flex-col gap-1">
-                <span className="font-display text-[24px] font-semibold">{team[id].name}</span>
-                <span className="text-[15px] text-muted">{team[id].role[locale]}</span>
+          {project.team.length > 0 && 
+            <Stagger as="section" className="grid gap-8 border-t border-line py-14 md:grid-cols-3">
+              <StaggerItem variant="left">
+                <h2 className="eyebrow">{t.project.team}</h2>
               </StaggerItem>
-            ))}
-            <StaggerItem className="flex flex-col gap-1">
-              <span className="font-display text-[24px] font-semibold">Soon Horizons</span>
-              <span className="text-[15px] text-muted">{t.project.coordination}</span>
-            </StaggerItem>
-          </Stagger>
+              {project.team.map((id) => (
+                <StaggerItem key={id} className="flex flex-col gap-1">
+                  <span className="font-display text-[24px] font-semibold">{team[id].name}</span>
+                  <span className="text-[15px] text-muted">{team[id].role[locale]}</span>
+                </StaggerItem>
+              ))}
+              <StaggerItem className="flex flex-col gap-1">
+                <span className="font-display text-[24px] font-semibold">Soon Horizons</span>
+                <span className="text-[15px] text-muted">{t.project.coordination}</span>
+              </StaggerItem>
+            </Stagger> 
+          }
 
           {/* Appel à l'action */}
           <Reveal variant="clip" duration={1.4} className="mb-16">
