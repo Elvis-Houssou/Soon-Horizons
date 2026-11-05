@@ -235,6 +235,7 @@ const en: Dictionary = {
   },
   statuses: {
     concept: "Concept",
+    approved: "Approved design · construction not started",
     construction: "Under construction",
     delivered: "Delivered",
   },
