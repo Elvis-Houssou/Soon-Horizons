@@ -2,7 +2,7 @@ import type { Localized } from "@/i18n/config";
 import type { TeamMemberId } from "./team";
 
 export const categories = ["residential", "development", "public", "hospitality", "office", "renovation"] as const;
-export const statuses = ["concept", "construction", "delivered"] as const;
+export const statuses = ["concept", "approved", "construction", "delivered"] as const;
 export const mediaKinds = ["renders", "construction", "plans", "beforeAfter"] as const;
 
 export type CategoryKey = (typeof categories)[number];
@@ -20,7 +20,7 @@ export type Project = {
   country: Localized;
   category: CategoryKey;
   status: StatusKey;
-  /** Année de livraison (réelle ou prévue). */
+  /** Année de référence du projet ou de livraison, selon son statut. */
   year: number;
   period: string;
   /** Surface de plancher, en m². */
