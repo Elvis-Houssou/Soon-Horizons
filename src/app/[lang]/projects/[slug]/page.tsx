@@ -179,7 +179,7 @@ export default async function ProjectPage({ params }: PageProps<"/[lang]/project
               <span className="font-display text-[24px] font-semibold">Soon Horizons</span>
               <span className="text-[15px] text-muted">{t.project.coordination}</span>
             </StaggerItem>
-          </Stagger>
+          </Stagger>}
 
           {/* Appel à l'action */}
           <Reveal variant="clip" duration={1.4} className="mb-16">
