@@ -174,6 +174,7 @@ export const projects: Project[] = [
     beforeAfter: false,
     team: [],
   },
+  {
     slug: "hotel-dune-rose",
     number: "04",
     name: "Hôtel Dune Rose",
