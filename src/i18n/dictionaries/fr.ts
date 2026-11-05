@@ -102,7 +102,7 @@ const fr = {
       empty: "Aucun projet ne correspond à ces filtres.",
     },
     count: { one: "projet", other: "projets" },
-    placeholderNotice: "Contenu provisoire · projets fictifs",
+    placeholderNotice: "Portfolio en cours de constitution · certains projets sont des démonstrations",
     similarTitle: "Vous avez un projet similaire ?",
     similarCta: "Parlons-en",
   },
