@@ -233,6 +233,7 @@ const fr = {
   },
   statuses: {
     concept: "Concept",
+    approved: "Projet validé · travaux non commencés",
     construction: "En chantier",
     delivered: "Livré",
   },
