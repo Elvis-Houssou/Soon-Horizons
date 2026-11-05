@@ -104,7 +104,7 @@ const en: Dictionary = {
       empty: "No project matches these filters.",
     },
     count: { one: "project", other: "projects" },
-    placeholderNotice: "Placeholder content · fictional projects",
+    placeholderNotice: "Portfolio in progress · some entries are demonstrations",
     similarTitle: "Have a similar project in mind?",
     similarCta: "Let's talk",
   },
