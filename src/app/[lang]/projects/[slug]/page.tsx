@@ -134,7 +134,7 @@ export default async function ProjectPage({ params }: PageProps<"/[lang]/project
               />
               <Reveal delay={0.3}>
                 <p className="mt-6 text-[17px] leading-[1.7] text-fg-2">{project.concept.body[locale]}</p>
-                <p className="mt-4 font-mono text-xs text-muted uppercase">{t.project.placeholder}</p>
+                {project.status !== "approved" && <p className="mt-4 font-mono text-xs text-muted uppercase">{t.project.placeholder}</p>}
               </Reveal>
             </div>
           </section>
