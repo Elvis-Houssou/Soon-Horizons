@@ -7,6 +7,7 @@ Cette documentation décrit l'état du dépôt **Soon-Horizons** observé le 5 n
 - [Vue d'ensemble du produit](./PRODUCT_OVERVIEW.md) — objectif, publics, parcours, pages et règles métier.
 - [Architecture technique](./TECHNICAL_ARCHITECTURE.md) — stack, structure du code, routage, i18n, données et composants.
 - [État actuel et feuille de route](./STATUS_AND_ROADMAP.md) — fonctionnalités présentes, limites vérifiées, priorités de réalisation.
+- [Villa Legacy](./VILLA_LEGACY.md) — données extraites du dossier, surfaces relevées et règles de publication.
 
 ## Références du projet
 
