@@ -165,7 +165,7 @@ export default async function ProjectPage({ params }: PageProps<"/[lang]/project
           </Reveal>
 
           {/* Équipe de conception : noms et rôles uniquement, jamais de coordonnées. */}
-          <Stagger as="section" className="grid gap-8 border-t border-line py-14 md:grid-cols-3">
+          {project.team.length > 0 && <Stagger as="section" className="grid gap-8 border-t border-line py-14 md:grid-cols-3">
             <StaggerItem variant="left">
               <h2 className="eyebrow">{t.project.team}</h2>
             </StaggerItem>
